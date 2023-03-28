@@ -4,29 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c909f1-346b-42f1-9b18-2781ec7ba9ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gerenciador-funcionarios.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/entidades/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/entidades/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/entidades/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/enums/Sexo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/interfaceRepository/IRepositoryCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/interfaceRepository/IRepositoryFuncionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/interfaceService/IServiceCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/interfaceService/IServiceFuncionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/repository/RepositoryCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/repository/RepositoryFuncionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/service/Buscador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/service/ServiceCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/service/ServiceFuncionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/service/VerificadorCpf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/view/gui/Gerenciador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/view/gui/Menu.java" afterDir="false" />
+    <list default="true" id="d8c909f1-346b-42f1-9b18-2781ec7ba9ea" name="Changes" comment="Subindo projeto">
+      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/repository/RepositorioFuncionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/service/EstruturaDeDados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/service/ServicoFuncionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/entidades/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/entidades/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/entidades/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/entidades/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/entidades/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/interfaceRepository/IRepositoryCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/interfaceRepository/IRepositoryCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/interfaceRepository/IRepositoryFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/interfaceRepository/IRepositoryFuncionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/interfaceService/IServiceCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/interfaceService/IServiceCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/repository/RepositoryCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/repository/RepositoryCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/repository/RepositoryFuncionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/service/Buscador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/service/ServiceCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/service/ServiceCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/service/ServiceFuncionario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/model/service/VerificadorCpf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/view/gui/Gerenciador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/view/gui/Gerenciador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/view/gui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/unifacol/gerenciador/view/gui/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +77,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Gerenciador" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.unifacol.gerenciador.view.gui.Gerenciador" />
+      <module name="gerenciador-funcionarios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.unifacol.gerenciador.view.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="gerenciador-funcionarios" />
@@ -90,6 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Gerenciador" />
         <item itemvalue="Application.Gerenciador" />
         <item itemvalue="Application.Main" />
       </list>
@@ -108,11 +118,37 @@
       <workItem from="1679657525194" duration="12615000" />
       <workItem from="1679777751502" duration="7734000" />
       <workItem from="1679833239300" duration="4212000" />
-      <workItem from="1679845571415" duration="1245000" />
+      <workItem from="1679845571415" duration="1771000" />
+      <workItem from="1679957350804" duration="114000" />
+      <workItem from="1679959326273" duration="207000" />
+      <workItem from="1679999935449" duration="18526000" />
     </task>
+    <task id="LOCAL-00001" summary="Subindo projeto">
+      <created>1679846995728</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679846995728</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Subindo projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subindo projeto" />
   </component>
 </project>

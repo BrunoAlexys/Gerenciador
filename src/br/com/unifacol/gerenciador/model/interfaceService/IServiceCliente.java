@@ -5,8 +5,8 @@ import br.com.unifacol.gerenciador.model.entidades.Cliente;
 import java.util.Queue;
 
 public interface IServiceCliente {
-    void adicionarCliente();
-    void alterarCliente();
-    void removerCliente();
-    void listarCliente();
+    public void adicionar();
+    public void alterarCliente();
+    public void remover();
+    public void listar();
 }

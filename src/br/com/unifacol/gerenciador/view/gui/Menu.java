@@ -1,20 +1,20 @@
 package br.com.unifacol.gerenciador.view.gui;
 
+import br.com.unifacol.gerenciador.model.interfaceRepository.IRepositoryFuncionario;
+import br.com.unifacol.gerenciador.model.repository.RepositorioFuncionario;
 import br.com.unifacol.gerenciador.model.repository.RepositoryCliente;
-import br.com.unifacol.gerenciador.model.repository.RepositoryFuncionario;
-import br.com.unifacol.gerenciador.model.service.Buscador;
 import br.com.unifacol.gerenciador.model.service.ServiceCliente;
-import br.com.unifacol.gerenciador.model.service.ServiceFuncionario;
+import br.com.unifacol.gerenciador.model.service.ServicoFuncionario;
 
 import javax.swing.*;
 import java.util.LinkedList;
 
 public class Menu {
-    RepositoryCliente repositoryCliente = new RepositoryCliente(new LinkedList<>());
-    RepositoryFuncionario repositoryFuncionario = new RepositoryFuncionario(new LinkedList<>());
-    ServiceFuncionario funcionario = new ServiceFuncionario(repositoryFuncionario,new Buscador(repositoryFuncionario,repositoryCliente));
-    ServiceCliente cliente = new ServiceCliente(repositoryCliente,new Buscador(repositoryFuncionario,repositoryCliente));
 
+    RepositoryCliente repositoryCliente = new RepositoryCliente<>(10);
+    RepositorioFuncionario repositorioFuncionario = new RepositorioFuncionario<>(10);
+    ServicoFuncionario funcionario = new ServicoFuncionario(repositorioFuncionario);
+    ServiceCliente cliente = new ServiceCliente(repositoryCliente);
     public void menu(){
         Integer menu =
                 Integer.parseInt(JOptionPane.showInputDialog("\n------- Gerenciador -------" +
@@ -27,6 +27,7 @@ public class Menu {
                         "\n|Opção 7 - Excluir Cliente |" +
                         "\n|Opção 8 - Listar Cliente |" +
                         "\n|Opção 9 - Sair |"));
+
 
         switch (menu){
             case 1:
@@ -42,16 +43,16 @@ public class Menu {
                 funcionario.listarFuncionario();
                 menu();
             case 5:
-                cliente.adicionarCliente();
+                cliente.adicionar();
                 menu();
             case 6:
                 cliente.alterarCliente();
                 menu();
             case 7:
-                cliente.removerCliente();
+                cliente.remover();
                 menu();
             case 8:
-                cliente.listarCliente();
+                cliente.listar();
                 menu();
             case 9:
                 System.exit(0);

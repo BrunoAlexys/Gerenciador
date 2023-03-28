@@ -1,38 +1,38 @@
 package br.com.unifacol.gerenciador.model.repository;
 
 import br.com.unifacol.gerenciador.model.entidades.Cliente;
-import br.com.unifacol.gerenciador.model.interfaceRepository.IRepositoryCliente;
+import br.com.unifacol.gerenciador.model.entidades.Funcionario;
+import br.com.unifacol.gerenciador.model.interfaceRepository.IRepositoryFuncionario;
 import br.com.unifacol.gerenciador.model.service.EstruturaDeDados;
 
-public class RepositoryCliente<T> extends EstruturaDeDados implements IRepositoryCliente {
+public class RepositorioFuncionario<T> extends EstruturaDeDados implements IRepositoryFuncionario {
 
-    public RepositoryCliente(Integer capacidade){
+    public RepositorioFuncionario(Integer capacidade){
         super(10);
     }
-
     @Override
-    public void adicionarCliente(Cliente cliente) {
-        super.adicionar(cliente);
+    public void adicionarFuncionario(Funcionario funcionario) {
+        super.adicionar(funcionario);
     }
 
     @Override
-    public void alterarCliente(String cpfAtual, Cliente clienteAtualizado) {
+    public void alterarFuncionario(String cpf, Funcionario funcionario) {
         boolean encontrado = false;
         for (int i = 0; i < tamanho; i++) {
-            Cliente cliente = (Cliente) elementos[i];
-            if (cliente.getCpf().equals(cpfAtual)) {
-                elementos[i] = clienteAtualizado;
+            Funcionario funcionario1 = (Funcionario) elementos[i];
+            if (funcionario1.getCpf().equals(cpf)) {
+                elementos[i] = funcionario;
                 encontrado = true;
                 break;
             }
         }
         if (!encontrado) {
-            throw new IllegalArgumentException("Cliente não encontrado!");
+            throw new IllegalArgumentException("Funcionario não encontrado!");
         }
     }
 
     @Override
-    public void removerCliente(int posicao) {
+    public void removerFuncionario(int posicao) {
         if (!(posicao >= 0 && posicao < tamanho)){
             throw new IllegalArgumentException("Posição inválida!");
         }
@@ -45,17 +45,15 @@ public class RepositoryCliente<T> extends EstruturaDeDados implements IRepositor
     }
 
     @Override
-    public void removerPorCpf(String cpf){
+    public void removerPorCpf(String cpf) {
         for (int i = 0; i < tamanho; i++) {
-            Cliente cliente = (Cliente) elementos[i];
-            if (cliente.getCpf().equals(cpf)) {
-                removerCliente(i);
+            Funcionario funcionario = (Funcionario) elementos[i];
+            if (funcionario.getCpf().equals(cpf)) {
+                removerFuncionario(i);
                 break;
             }
         }
     }
-
-
 
     @Override
     public String listar() {

@@ -4,34 +4,69 @@ import br.com.unifacol.gerenciador.model.enums.Sexo;
 
 import java.time.LocalDate;
 
-public class Cliente extends Pessoa{
-    private Long id;
-    private Integer senha;
+public class Cliente{
+    private String nome;
+    private String email;
+    private String telefone;
+    private Sexo sexo;
+    private String cpf;
 
-    public Cliente(String nome, String sobrenome, int idade, LocalDate dataDeNascimento, String cpf, Sexo sexo, Long id,Integer senha) {
-        super(nome, sobrenome, idade, dataDeNascimento, cpf, sexo);
-        this.id = id;
-        this.senha = senha;
+    public Cliente(String nome, String email, String telefone, Sexo sexo, String cpf) {
+        this.nome = nome;
+        this.email = email;
+        this.telefone = telefone;
+        this.sexo = sexo;
+        this.cpf = cpf;
     }
 
-    public Long getId() {
-        return id;
+    public String getNome() {
+        return nome;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public Integer getSenha() {
-        return senha;
+    public String getEmail() {
+        return email;
     }
 
-    public void setSenha(Integer senha) {
-        this.senha = senha;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public Sexo getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(Sexo sexo) {
+        this.sexo = sexo;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     @Override
     public String toString() {
-        return "\nID: " + this.getId() + super.toString();
+        return "Cliente{" +
+                "nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", sexo=" + sexo +
+                ", cpf='" + cpf + '\'' +
+                '}';
     }
 }
